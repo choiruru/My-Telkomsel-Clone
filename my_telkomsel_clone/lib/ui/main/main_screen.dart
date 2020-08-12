@@ -24,9 +24,7 @@ class MainScreen extends StatelessWidget {
       viewModelBuilder: () => MainViewModel(),
       builder: (context, model, child){
         return Scaffold(
-          body: Center(
-            child: pages[model.selectedIndex]
-          ),
+          body: pages[model.selectedIndex],
           bottomNavigationBar: BottomNavigationBar(
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
