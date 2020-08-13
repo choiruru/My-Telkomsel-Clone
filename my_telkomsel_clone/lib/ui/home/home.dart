@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:my_telkomsel_clone/constant/assets.dart';
 import 'package:my_telkomsel_clone/ui/home/home_view_model.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/button_action.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/circle_image.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/header.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/kuota/list_kuota.dart';
@@ -20,7 +21,14 @@ class HomeScreen extends StatelessWidget {
         builder: (context, model, child){
           return SafeArea(
             child: Container(
-              color: Colors.redAccent,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage(
+                    ImageAssets.imgHomeBg,
+                  ),
+                  alignment: Alignment.topCenter
+                ),
+              ),
               child: RefreshIndicator(
                 onRefresh: (){
 
@@ -37,8 +45,9 @@ class HomeScreen extends StatelessWidget {
                       delegate: SliverChildBuilderDelegate(
                           (context, index){
                             switch (index){
-                              case 0 : {return Profile();}
+                              case 0 : return Profile();
                               case 1 : return ListKuota(models: model.kuotas,);
+                              case 2 : return ButtonAction();
                               case 3 : return Text("skjdfgshjdfwd");
                               default : return Text("sjdfghsdjfhgisjer");
                             }
@@ -47,54 +56,6 @@ class HomeScreen extends StatelessWidget {
                         childCount: 40
                       ),
                     ),
-//                    SliverFillRemaining(
-//                      child: ClipRRect(
-//                        borderRadius: BorderRadius.only(
-//                            topLeft: Radius.circular(16),
-//                            topRight: Radius.circular(16)
-//                        ),
-//                        child: Container(
-//                          color: Colors.white,
-//                          child: Column(
-//                            children: <Widget>[
-//                              Profile(),
-//                              ListKuota(models: model.kuotas,),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                              Text("skjdfgshjdfwd"),
-//                            ],
-//                          ),
-//                        ),
-//                      ),
-//                    )
                   ]
                 ),
               ),

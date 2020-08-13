@@ -8,7 +8,15 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.redAccent,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            image: NetworkImage(
+              ImageAssets.imgHomeBg,
+            ),
+            alignment: Alignment.topCenter,
+            fit: BoxFit.fitWidth
+        ),
+      ),
       child: Center(
         child: Row(
           children: <Widget>[
