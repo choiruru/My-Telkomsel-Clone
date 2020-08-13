@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:my_telkomsel_clone/constant/img_assets.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/circle_icon.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/circle_image.dart';
 
 class Header extends StatelessWidget {
   @override
@@ -14,19 +15,10 @@ class Header extends StatelessWidget {
             const SizedBox(
               width: 16.0,
             ),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(15.0),
-              child: Container(
-                color: Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.all(1.0),
-                  child: Image.asset(
-                    ImageAssets.imgHomeHeader,
-                    height: 30.0,
-                    width: 30.0,
-                  ),
-                ),
-              ),
+            CircleImage(
+              image: ImageAssets.imgHomeHeader,
+              size: 30.0,
+              padding: 1.0,
             ),
             const SizedBox(
               width: 10.0,
