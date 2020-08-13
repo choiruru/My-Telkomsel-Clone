@@ -10,7 +10,7 @@ class ItemKuota extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Container(
-        width: 120,
+        width: 150,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(

@@ -53,6 +53,7 @@ flutter:
     - assets/images/img_home_header.png
     - assets/images/img_profile.jpg
     - assets/json/kuota.json
+    - assets/json/last_transaction.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

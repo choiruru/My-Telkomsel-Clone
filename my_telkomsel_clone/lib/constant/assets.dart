@@ -11,4 +11,5 @@ class JsonAssets{
 
   static const String _BASE = 'assets/json/';
   static const String kuota = _BASE+'kuota.json';
+  static const String lastTransaction = _BASE+'last_transaction.json';
 }

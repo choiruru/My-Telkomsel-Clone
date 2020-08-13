@@ -14,9 +14,10 @@ class ButtonAction extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const SizedBox(width: 16,),
+              const SizedBox(width: 14,),
               Expanded(
                 child: OutlineButton(
+                  borderSide: BorderSide(color: Colors.black54),
                   onPressed: (){
 
                   },
@@ -24,7 +25,7 @@ class ButtonAction extends StatelessWidget {
                   textColor: Colors.black87,
                 ),
               ),
-              const SizedBox(width: 16,),
+              const SizedBox(width: 10,),
               Expanded(
                 child: RaisedButton(
                   onPressed: (){
@@ -35,12 +36,12 @@ class ButtonAction extends StatelessWidget {
                   textColor: Colors.white,
                 ),
               ),
-              const SizedBox(width: 16,)
+              const SizedBox(width: 14,)
             ],
           ),
           const SizedBox(height: 8,),
           const Divider(
-            height: 1,
+            height: 0,
             color: Colors.black12,
           ),
           IntrinsicHeight(
@@ -57,7 +58,7 @@ class ButtonAction extends StatelessWidget {
                   ),
                 ),
                 VerticalDivider(
-                  width: 1,
+                  width: 0,
                   color: Colors.black12,
                 ),
                 Expanded(
@@ -74,7 +75,8 @@ class ButtonAction extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          Divider(thickness: 14, height: 14, color: Colors.black12,)
         ],
       ),
     );
