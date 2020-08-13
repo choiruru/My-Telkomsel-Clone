@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_telkomsel_clone/constant/img_assets.dart';
+import 'package:my_telkomsel_clone/constant/assets.dart';
 
 class CircleImage extends StatelessWidget {
   final String image;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:my_telkomsel_clone/constant/img_assets.dart';
+import 'package:my_telkomsel_clone/constant/assets.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/circle_icon.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/circle_image.dart';
 

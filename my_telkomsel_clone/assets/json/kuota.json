@@ -1,0 +1,29 @@
+{
+  "kuota": [
+    {
+      "namaPaket": "Internet",
+      "kuota": "0KB",
+      "kadaluarsa": ""
+    },
+    {
+      "namaPaket": "Multimedia",
+      "kuota": "0KB",
+      "kadaluarsa": ""
+    },
+    {
+      "namaPaket": "Voice",
+      "kuota": "0KB",
+      "kadaluarsa": ""
+    },
+    {
+      "namaPaket": "SMS",
+      "kuota": "0KB",
+      "kadaluarsa": ""
+    },
+    {
+      "namaPaket": "Monetary",
+      "kuota": "0KB",
+      "kadaluarsa": ""
+    }
+  ]
+}
