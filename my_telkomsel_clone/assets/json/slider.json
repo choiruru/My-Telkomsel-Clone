@@ -1,0 +1,35 @@
+{
+  "slider_data": [
+    {
+      "type": "Package",
+      "title": "Combo Sakti",
+      "desc": "Internet, social media, voice all in one package!",
+      "image": "https://pbs.twimg.com/profile_images/3670751027/6b47e22daaa616128773eb89eaf9016e.jpeg"
+    },{
+      "type": "Package",
+      "title": "Internet OMG",
+      "desc": "more fun on youtube and social media",
+      "image": "https://lh3.googleusercontent.com/a-/AAuE7mAX5PwNu9EVbliPoXLFOUZShJdOXi7q7QurVE0"
+    },{
+      "type": "Package",
+      "title": "Ket4ngan berhadiah lucky draw",
+      "desc": "Beli kuota ketengan dan dapatkan hadiah",
+      "image": "https://static-s.aa-cdn.net/img/ios/880966426/3d0f065a808f1fd7c9c25d1ce2a37b4a?v=1"
+    },{
+      "type": "Package",
+      "title": "#KuotaKeluarga",
+      "desc": "Share #kuotakeluarga staring from 20GB",
+      "image": "https://pbs.twimg.com/profile_images/378800000327230589/11909c07aafa77d63b8a0fc30fd2ab52.png"
+    },{
+      "type": "Promo",
+      "title": "Telkomsel Orbit Home Internet",
+      "desc": "Wifi Modem + data only for IDR 799K get free 50 GB",
+      "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/e7/50/91/e750914c-885c-4f74-02cc-c9b85719241e/source/256x256bb.jpg"
+    },{
+      "type": "Package",
+      "title": "Check in and get reward",
+      "desc": "get data kuota up to 2GB",
+      "image": "https://1.bp.blogspot.com/-EbaI-TrDe8Q/UbAv-vTu2WI/AAAAAAAAALs/x9QbmDHJldQ/w620/Kartu+As+PlayMania.jpeg"
+    }
+  ]
+}

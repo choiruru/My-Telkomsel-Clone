@@ -8,6 +8,9 @@ class ListTransaction extends StatelessWidget {
   const ListTransaction({Key key, @required this.models}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    if(models==null || models.isEmpty){
+      return Container();
+    }
     return ListView.builder(
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
