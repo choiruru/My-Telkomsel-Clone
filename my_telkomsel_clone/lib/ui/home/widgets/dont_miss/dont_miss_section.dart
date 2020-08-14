@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_telkomsel_clone/constant/assets.dart';
-import 'package:my_telkomsel_clone/ui/home/widgets/divider.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/common/divider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/dont_miss/item_dont_miss.dart';
 
 class DontMissSection extends StatelessWidget {

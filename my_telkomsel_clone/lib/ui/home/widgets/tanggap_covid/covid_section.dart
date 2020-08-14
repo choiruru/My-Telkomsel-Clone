@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_telkomsel_clone/data/model_home_covid.dart';
-import 'package:my_telkomsel_clone/ui/home/widgets/divider.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/common/button_see_all.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/common/divider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/tanggap_covid/list_covid.dart';
 
 class CovidSection extends StatelessWidget {
@@ -31,19 +32,11 @@ class CovidSection extends StatelessWidget {
                 flex: 1,
                 child: Container(),
               ),
-              FlatButton(
+              ButtonSeeAll(
                 onPressed: (){
 
                 },
-                textColor: Colors.redAccent,
-                child: Text(
-                  "See all",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12
-                  ),
-                ),
-              )
+              ),
             ],
           ),
         ),

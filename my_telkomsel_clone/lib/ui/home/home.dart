@@ -4,7 +4,7 @@ import 'package:my_telkomsel_clone/constant/assets.dart';
 import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
 import 'package:my_telkomsel_clone/ui/home/home_view_model.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/button_action.dart';
-import 'package:my_telkomsel_clone/ui/home/widgets/circle_image.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/common/circle_image.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/dont_miss/dont_miss_section.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/header.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/kuota/list_kuota.dart';

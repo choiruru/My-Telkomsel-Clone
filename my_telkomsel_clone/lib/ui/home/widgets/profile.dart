@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:my_telkomsel_clone/constant/assets.dart';
-import 'package:my_telkomsel_clone/ui/home/widgets/circle_image.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/common/circle_image.dart';
 
 class Profile extends StatelessWidget {
   @override

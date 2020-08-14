@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
-import 'package:my_telkomsel_clone/ui/home/widgets/divider.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/common/button_see_all.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/common/divider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/transaksi/list_transaction.dart';
 
 class Transaction extends StatelessWidget {
@@ -48,13 +49,11 @@ class Transaction extends StatelessWidget {
                 flex: 1,
                 child: Container(),
               ),
-              FlatButton(
-                child: Text("See all", style: TextStyle(fontSize: 12),),
-                textColor: Colors.red,
+              ButtonSeeAll(
                 onPressed: (){
-
+                  
                 },
-              )
+              ),
             ],
           ),
           ListTransaction(models: models,),
