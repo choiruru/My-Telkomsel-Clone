@@ -41,7 +41,6 @@ class HomeViewModel extends BaseViewModel{
   Future<void> getSlider(BuildContext context) async{
     String data = await DefaultAssetBundle.of(context).loadString(JsonAssets.slider);
     _slider = ModelSlider.fromJson(json.decode(data)).sliderData;
-    print(data);
     notifyListeners();
   }
 

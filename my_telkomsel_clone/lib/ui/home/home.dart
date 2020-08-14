@@ -5,6 +5,7 @@ import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
 import 'package:my_telkomsel_clone/ui/home/home_view_model.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/button_action.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/circle_image.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/dont_miss/dont_miss_section.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/header.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/kuota/list_kuota.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/profile.dart';
@@ -17,6 +18,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("build");
     return StatefulWrapper(
       child: ViewModelBuilder<HomeViewModel>.reactive(
         viewModelBuilder: () => HomeViewModel(),
@@ -53,16 +55,16 @@ class HomeScreen extends StatelessWidget {
                               case 2 : return ButtonAction();
                               case 3 : return Transaction(models: model.lasTransaction);
                               case 4 : return SliderSection(viewModel: model,);
-                              case 5 : return Text("skjdfgshjdfwd");
-                              case 6 : return Text("skjdfgshjdfwd");
-                              case 7 : return Text("skjdfgshjdfwd");
-                              case 8 : return Text("skjdfgshjdfwd");
-                              case 9 : return Text("skjdfgshjdfwd");
-                              default : return Text("sjdfghsdjfhgisjer");
+                              case 5 : return DontMissSection();
+                              case 6 : return Container();
+                              case 7 : return Container();
+                              case 8 : return Container();
+                              case 9 : return Container();
+                              default : return Container();
                             }
                             return Profile();
                           },
-                        childCount: 40
+                        childCount: 10
                       ),
                     ),
                   ]
