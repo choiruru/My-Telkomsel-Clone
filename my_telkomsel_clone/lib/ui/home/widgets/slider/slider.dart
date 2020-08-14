@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:my_telkomsel_clone/ui/home/home_view_model.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/divider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/slider/item_slider.dart';
 import 'package:my_telkomsel_clone/widgets/stateful_wrapper.dart';
 
@@ -82,11 +83,7 @@ class SliderSection extends StatelessWidget {
               }).toList(),
             ),
           ),
-          Divider(
-            thickness: 14,
-            height: 14,
-            color: Colors.black12,
-          )
+          HomeDivider()
         ],
       ),
     );

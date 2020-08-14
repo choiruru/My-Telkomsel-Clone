@@ -56,6 +56,7 @@ flutter:
     - assets/json/kuota.json
     - assets/json/last_transaction.json
     - assets/json/slider.json
+    - assets/json/covid.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

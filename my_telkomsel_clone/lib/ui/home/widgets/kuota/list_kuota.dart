@@ -21,10 +21,10 @@ class ListKuota extends StatelessWidget {
           ),
           separatorBuilder: (context, index) => const SizedBox(width: 4,),
           scrollDirection: Axis.horizontal,
-            itemCount: models.length,
-            itemBuilder: (context, index){
+          itemCount: models.length,
+          itemBuilder: (context, index){
             return ItemKuota(kuota: models[index],);
-            }
+          }
         ),
       );
     }

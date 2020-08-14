@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/divider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/transaksi/list_transaction.dart';
 
 class Transaction extends StatelessWidget {
@@ -58,11 +59,7 @@ class Transaction extends StatelessWidget {
           ),
           ListTransaction(models: models,),
           const SizedBox(height: 10,),
-          Divider(
-            height: 14,
-            thickness: 14,
-            color: Colors.black12,
-          )
+          HomeDivider(),
         ],
       ),
     );

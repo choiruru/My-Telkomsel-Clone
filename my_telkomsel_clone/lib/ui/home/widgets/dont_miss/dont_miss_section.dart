@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_telkomsel_clone/constant/assets.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/divider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/dont_miss/item_dont_miss.dart';
 
 class DontMissSection extends StatelessWidget {
@@ -49,11 +50,7 @@ class DontMissSection extends StatelessWidget {
               ],
             ),
           ),
-          Divider(
-            height: 14,
-            thickness: 14,
-            color: Colors.black12,
-          )
+          HomeDivider()
         ],
       ),
     );
