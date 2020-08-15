@@ -53,6 +53,7 @@ class SliderSection extends StatelessWidget {
               aspectRatio: 3,
               enableInfiniteScroll: false,
               autoPlay: false,
+              viewportFraction: 0.9,
               onPageChanged: (index, reason){
                 viewModel.updateIndexSlider(index);
               }

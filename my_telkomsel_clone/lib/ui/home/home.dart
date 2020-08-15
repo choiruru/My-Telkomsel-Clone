@@ -19,62 +19,59 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("build");
-    return StatefulWrapper(
-      child: ViewModelBuilder<HomeViewModel>.reactive(
-        viewModelBuilder: () => HomeViewModel(),
-        onModelReady: (model) => model.init(context),
-        builder: (context, model, child){
-          return SafeArea(
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(
-                    ImageAssets.imgHomeBg,
-                  ),
-                  alignment: Alignment.topCenter
+    return ViewModelBuilder<HomeViewModel>.reactive(
+      viewModelBuilder: () => HomeViewModel(),
+      onModelReady: (model) => model.init(context),
+      builder: (context, model, child){
+        return SafeArea(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  ImageAssets.imgHomeBg,
                 ),
-              ),
-              child: RefreshIndicator(
-                onRefresh: (){
-
-                },
-                child: CustomScrollView(
-                  slivers: <Widget>[
-                    SliverAppBar(
-                      floating: false,
-                      pinned: true,
-                      expandedHeight: 90.0,
-                      flexibleSpace: Header(),
-                    ),
-                    SliverList(
-                      delegate: SliverChildBuilderDelegate(
-                          (context, index){
-                            switch (index){
-                              case 0 : return Profile();
-                              case 1 : return ListKuota(models: model.kuotas,);
-                              case 2 : return ButtonAction();
-                              case 3 : return Transaction(models: model.lasTransaction);
-                              case 4 : return SliderSection(viewModel: model,);
-                              case 5 : return DontMissSection();
-                              case 6 : return CovidSection(models: model.covids,);
-                              case 7 : return Container();
-                              case 8 : return Container();
-                              case 9 : return Container();
-                              default : return Container();
-                            }
-                            return Profile();
-                          },
-                        childCount: 10
-                      ),
-                    ),
-                  ]
-                ),
+                alignment: Alignment.topCenter
               ),
             ),
-          );
-        },
-      ),
+            child: RefreshIndicator(
+              onRefresh: (){
+
+              },
+              child: CustomScrollView(
+                slivers: <Widget>[
+                  SliverAppBar(
+                    floating: false,
+                    pinned: true,
+                    expandedHeight: 90.0,
+                    flexibleSpace: Header(),
+                  ),
+                  SliverList(
+                    delegate: SliverChildBuilderDelegate(
+                        (context, index){
+                          switch (index){
+                            case 0 : return Profile();
+                            case 1 : return ListKuota(models: model.kuotas,);
+                            case 2 : return ButtonAction();
+                            case 3 : return Transaction(models: model.lasTransaction);
+                            case 4 : return SliderSection(viewModel: model,);
+                            case 5 : return DontMissSection();
+                            case 6 : return CovidSection(models: model.covids,);
+                            case 7 : return Container();
+                            case 8 : return Container();
+                            case 9 : return Container();
+                            default : return Container();
+                          }
+                          return Profile();
+                        },
+                      childCount: 10
+                    ),
+                  ),
+                ]
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }

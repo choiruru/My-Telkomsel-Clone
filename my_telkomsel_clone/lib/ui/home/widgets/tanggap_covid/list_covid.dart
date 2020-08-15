@@ -13,7 +13,7 @@ class ListCovid extends StatelessWidget {
       height: 160,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.only(left: 10, right: 0, bottom: 10),
+        padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
         itemCount: models.length,
         itemBuilder: (context, index){
           return ItemCovid(model: models[index],);

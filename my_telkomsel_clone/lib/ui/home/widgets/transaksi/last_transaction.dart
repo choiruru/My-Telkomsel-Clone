@@ -51,7 +51,7 @@ class Transaction extends StatelessWidget {
               ),
               ButtonSeeAll(
                 onPressed: (){
-                  
+
                 },
               ),
             ],
