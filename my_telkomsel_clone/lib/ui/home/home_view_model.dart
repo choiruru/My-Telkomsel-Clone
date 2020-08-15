@@ -5,6 +5,7 @@ import 'package:my_telkomsel_clone/constant/assets.dart';
 import 'package:my_telkomsel_clone/data/model_home_covid.dart';
 import 'package:my_telkomsel_clone/data/model_home_kuota.dart';
 import 'package:my_telkomsel_clone/data/model_home_slider.dart';
+import 'package:my_telkomsel_clone/data/model_home_voucher.dart';
 import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
 import 'package:stacked/stacked.dart';
 
@@ -22,6 +23,9 @@ class HomeViewModel extends BaseViewModel{
   List<TanggapCovid> _covids;
   List<TanggapCovid> get covids => _covids;
 
+  ModelVoucher _modelVoucher;
+  ModelVoucher get modelVoucher => _modelVoucher;
+
   int indexSlider = 0;
 
   void init(BuildContext context) {
@@ -29,6 +33,7 @@ class HomeViewModel extends BaseViewModel{
     _getLastTransaction(context);
     _getSlider(context);
     _getCovid(context);
+    _getVoucher(context);
   }
 
   Future<void> _getKuota(BuildContext context) async {
@@ -54,10 +59,23 @@ class HomeViewModel extends BaseViewModel{
     _covids = ModelCovid.fromJson(json.decode(data)).tanggapCovid;
     notifyListeners();
   }
+  
+  Future<void> _getVoucher(BuildContext context) async{
+    String data = await DefaultAssetBundle.of(context).loadString(JsonAssets.voucher);
+    _modelVoucher = ModelVoucher.fromJson(json.decode(data));
+    notifyListeners();
+  }
 
   void updateIndexSlider(int index){
     indexSlider = index;
     notifyListeners();
+  }
+  
+  void updateSelectedButtonVoucher(int index){
+    if(index!=modelVoucher.selectedButton){
+      modelVoucher.selectedButton = index;
+      notifyListeners();
+    }
   }
 
 }

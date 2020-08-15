@@ -14,35 +14,38 @@ class CovidSection extends StatelessWidget {
     if(models==null || models.isEmpty){
       return Container();
     }
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 14),
-          child: Row(
-            children: [
-              Text(
-                "Telkomsel Tanggap Covid-19",
-                style: TextStyle(
-                  color: Colors.black87,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 12
+    return Container(
+      color: Colors.white,
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 14),
+            child: Row(
+              children: [
+                Text(
+                  "Telkomsel Tanggap Covid-19",
+                  style: TextStyle(
+                    color: Colors.black87,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12
+                  ),
                 ),
-              ),
-              Flexible(
-                flex: 1,
-                child: Container(),
-              ),
-              ButtonSeeAll(
-                onPressed: (){
+                Flexible(
+                  flex: 1,
+                  child: Container(),
+                ),
+                ButtonSeeAll(
+                  onPressed: (){
 
-                },
-              ),
-            ],
+                  },
+                ),
+              ],
+            ),
           ),
-        ),
-        ListCovid(models: models,),
-        HomeDivider(),
-      ],
+          ListCovid(models: models,),
+          HomeDivider(),
+        ],
+      ),
     );
   }
 }

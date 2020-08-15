@@ -12,6 +12,7 @@ import 'package:my_telkomsel_clone/ui/home/widgets/profile.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/slider/slider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/tanggap_covid/covid_section.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/transaksi/last_transaction.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/voucher/voucher_section.dart';
 import 'package:my_telkomsel_clone/widgets/stateful_wrapper.dart';
 import 'package:stacked/stacked.dart';
 
@@ -56,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                             case 4 : return SliderSection(viewModel: model,);
                             case 5 : return DontMissSection();
                             case 6 : return CovidSection(models: model.covids,);
-                            case 7 : return Container();
+                            case 7 : return VoucherSection(viewmodel: model,);
                             case 8 : return Container();
                             case 9 : return Container();
                             default : return Container();
