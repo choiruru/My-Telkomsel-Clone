@@ -6,12 +6,13 @@ class ItemPromoBannerSmall extends StatelessWidget {
   final Promo model;
   final Function onCLick;
 
-  ItemPromoBannerSmall({Key key, @required this.model, @required this.onCLick}) : super(key: key);
+  ItemPromoBannerSmall({Key key, @required this.model, @required this.onCLick})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
+      onTap: () {
         onCLick.call();
       },
       child: Card(
@@ -38,12 +39,10 @@ class ItemPromoBannerSmall extends StatelessWidget {
                         begin: Alignment.bottomCenter,
                         end: Alignment.topCenter,
                         colors: [
-                          Colors.black87,
-                          Colors.transparent,
-                          Colors.transparent
-                        ]
-                    )
-                ),
+                      Colors.black87,
+                      Colors.transparent,
+                      Colors.transparent
+                    ])),
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,

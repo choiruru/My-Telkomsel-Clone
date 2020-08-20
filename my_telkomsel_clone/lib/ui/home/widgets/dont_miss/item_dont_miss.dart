@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:my_telkomsel_clone/constant/assets.dart';
 
 class ItemDontMiss extends StatelessWidget {
   final String title, desc, img;
 
-  const ItemDontMiss({Key key, @required this.title, @required this.desc, @required this.img}) : super(key: key);
+  const ItemDontMiss(
+      {Key key, @required this.title, @required this.desc, @required this.img})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,18 +24,14 @@ class ItemDontMiss extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      style: TextStyle(
-                          color: Colors.black87,
-                          fontSize: 12
-                      ),
+                      style: TextStyle(color: Colors.black87, fontSize: 12),
                     ),
-                    const SizedBox(height: 6,),
+                    const SizedBox(
+                      height: 6,
+                    ),
                     Text(
                       desc,
-                      style: TextStyle(
-                          color: Colors.black54,
-                          fontSize: 10
-                      ),
+                      style: TextStyle(color: Colors.black54, fontSize: 10),
                     )
                   ],
                 ),

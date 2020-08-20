@@ -9,23 +9,24 @@ class ListKuota extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if(models == null || models.length ==0){
+    if (models == null || models.length == 0) {
       return Container();
-    }else{
+    } else {
       return Container(
         height: 76,
         color: Colors.white,
         child: ListView.separated(
-          padding: EdgeInsets.only(
-            left: 8, right: 8
-          ),
-          separatorBuilder: (context, index) => const SizedBox(width: 4,),
-          scrollDirection: Axis.horizontal,
-          itemCount: models.length,
-          itemBuilder: (context, index){
-            return ItemKuota(kuota: models[index],);
-          }
-        ),
+            padding: EdgeInsets.only(left: 8, right: 8),
+            separatorBuilder: (context, index) => const SizedBox(
+                  width: 4,
+                ),
+            scrollDirection: Axis.horizontal,
+            itemCount: models.length,
+            itemBuilder: (context, index) {
+              return ItemKuota(
+                kuota: models[index],
+              );
+            }),
       );
     }
   }

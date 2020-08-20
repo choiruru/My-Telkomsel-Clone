@@ -7,9 +7,8 @@ class Point extends StatelessWidget {
   Widget build(BuildContext context) {
     return ViewModelBuilder<PointViewModel>.reactive(
       viewModelBuilder: () => PointViewModel(),
-      builder: (context, model, child){
+      builder: (context, model, child) {
         return Scaffold(
-
           body: Center(
             child: Text("point"),
           ),

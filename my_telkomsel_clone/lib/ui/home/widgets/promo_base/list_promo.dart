@@ -43,33 +43,25 @@ class ListPromo extends StatelessWidget {
                   ),
                 ),
               );
-            }else if(models[index].type == "banner"){
+            } else if (models[index].type == "banner") {
               return ItemPromoBanner(
                 model: models[index],
-                onCLick: () => {
-
-                },
+                onCLick: () => {},
               );
-            }else if(models[index].type == "video"){
+            } else if (models[index].type == "video") {
               return ItemPromoVideo(
                 model: models[index],
-                onCLick: () => {
-
-                },
+                onCLick: () => {},
               );
-            }else if(models[index].type == "video_banner"){
+            } else if (models[index].type == "video_banner") {
               return ItemPromoVideoBanner(
                 model: models[index],
-                onCLick: () => {
-
-                },
+                onCLick: () => {},
               );
-            }else if(models[index].type == "banner_small"){
+            } else if (models[index].type == "banner_small") {
               return ItemPromoBannerSmall(
                 model: models[index],
-                onCLick: () => {
-
-                },
+                onCLick: () => {},
               );
             }
             return Container();

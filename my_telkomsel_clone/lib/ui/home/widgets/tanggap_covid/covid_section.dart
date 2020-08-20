@@ -11,7 +11,7 @@ class CovidSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if(models==null || models.isEmpty){
+    if (models == null || models.isEmpty) {
       return Container();
     }
     return Container(
@@ -25,24 +25,23 @@ class CovidSection extends StatelessWidget {
                 Text(
                   "Telkomsel Tanggap Covid-19",
                   style: TextStyle(
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12
-                  ),
+                      color: Colors.black87,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 12),
                 ),
                 Flexible(
                   flex: 1,
                   child: Container(),
                 ),
                 ButtonSeeAll(
-                  onPressed: (){
-
-                  },
+                  onPressed: () {},
                 ),
               ],
             ),
           ),
-          ListCovid(models: models,),
+          ListCovid(
+            models: models,
+          ),
           HomeDivider(),
         ],
       ),

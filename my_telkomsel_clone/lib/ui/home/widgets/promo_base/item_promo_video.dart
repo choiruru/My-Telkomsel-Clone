@@ -6,12 +6,13 @@ class ItemPromoVideo extends StatelessWidget {
   final Promo model;
   final Function onCLick;
 
-  const ItemPromoVideo({Key key, @required this.model, @required this.onCLick}) : super(key: key);
+  const ItemPromoVideo({Key key, @required this.model, @required this.onCLick})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
+      onTap: () {
         onCLick.call();
       },
       child: Card(
@@ -38,56 +39,61 @@ class ItemPromoVideo extends StatelessWidget {
                         begin: Alignment.bottomCenter,
                         end: Alignment.topCenter,
                         colors: [
-                          Colors.black87,
-                          Colors.transparent,
-                          Colors.transparent
-                        ]
-                    )
-                ),
+                      Colors.black87,
+                      Colors.transparent,
+                      Colors.transparent
+                    ])),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(14, 14, 14, 4),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
-                          child: Container(
-                            color: Colors.white,
-                            padding: EdgeInsets.fromLTRB(8, 2, 8, 2),
-                            child: Text(
-                              model.promoType,
-                              style: TextStyle(color: Colors.black87, fontSize: 10),
+                  Flexible(
+                    flex: 1,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(14, 14, 14, 4),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Container(
+                              color: Colors.white,
+                              padding: EdgeInsets.fromLTRB(8, 2, 8, 2),
+                              child: Text(
+                                model.promoType,
+                                style: TextStyle(
+                                    color: Colors.black87, fontSize: 10),
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
-                        child: Text(
-                          model.title,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14,
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
+                          child: Text(
+                            model.title,
+                            maxLines: 2,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14,
+                            ),
                           ),
-                        ),
-                      )
-                    ],
+                        )
+                      ],
+                    ),
                   ),
                   Container(
                     padding: EdgeInsets.all(4),
                     margin: EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(32),
-                      color: Colors.white
+                        borderRadius: BorderRadius.circular(32),
+                        color: Colors.white),
+                    child: Icon(
+                      Icons.play_arrow,
+                      size: 24,
                     ),
-                    child: Icon(Icons.play_arrow, size: 24,),
                   )
                 ],
               ),

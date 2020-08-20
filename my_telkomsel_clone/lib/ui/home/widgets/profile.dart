@@ -8,9 +8,7 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(16),
-          topRight: Radius.circular(16)
-      ),
+          topLeft: Radius.circular(16), topRight: Radius.circular(16)),
       child: Container(
         color: Colors.white,
         child: Padding(
@@ -31,31 +29,22 @@ class Profile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                      "Jung Kook",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 12
-                    ),
+                    "Jung Kook",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                   ),
                   const SizedBox(
                     height: 2,
                   ),
                   Text(
-                      "Rp 15,000",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14
-                    ),
+                    "Rp 15,000",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
                   ),
                   const SizedBox(
                     height: 4,
                   ),
                   Text(
-                      "Usage limit Rp 0",
-                    style: TextStyle(
-                      color: Colors.black26,
-                      fontSize: 11
-                    ),
+                    "Usage limit Rp 0",
+                    style: TextStyle(color: Colors.black26, fontSize: 11),
                   ),
                 ],
               ),
@@ -81,10 +70,7 @@ class Profile extends StatelessWidget {
                         ),
                         Text(
                           "Silver",
-                          style: TextStyle(
-                              color: Colors.black87,
-                              fontSize: 10
-                          ),
+                          style: TextStyle(color: Colors.black87, fontSize: 10),
                         )
                       ],
                     ),

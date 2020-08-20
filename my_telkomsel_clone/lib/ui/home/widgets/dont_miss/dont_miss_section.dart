@@ -16,14 +16,13 @@ class DontMissSection extends StatelessWidget {
             child: Text(
               "Don't miss",
               style: TextStyle(
-                color: Colors.black87,
-                fontWeight: FontWeight.bold,
-                fontSize: 12
-              ),
+                  color: Colors.black87,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 12),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(10,0,10,10),
+            padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
             child: Row(
               children: [
                 Flexible(
@@ -36,7 +35,9 @@ class DontMissSection extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(width: 2,),
+                const SizedBox(
+                  width: 2,
+                ),
                 Flexible(
                   flex: 1,
                   child: Container(

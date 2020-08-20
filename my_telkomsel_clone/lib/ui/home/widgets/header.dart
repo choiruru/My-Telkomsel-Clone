@@ -14,8 +14,7 @@ class Header extends StatelessWidget {
               ImageAssets.imgHomeBg,
             ),
             alignment: Alignment.topCenter,
-            fit: BoxFit.fitWidth
-        ),
+            fit: BoxFit.fitWidth),
       ),
       child: Center(
         child: Row(
@@ -41,15 +40,16 @@ class Header extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         "09876545678",
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.black87
-                        ),
+                        style: TextStyle(fontSize: 14, color: Colors.black87),
                       ),
                       const SizedBox(
                         width: 6,
                       ),
-                      Icon(MdiIcons.plus, color: Colors.black87, size: 18,),
+                      Icon(
+                        MdiIcons.plus,
+                        color: Colors.black87,
+                        size: 18,
+                      ),
                     ],
                   ),
                 ),

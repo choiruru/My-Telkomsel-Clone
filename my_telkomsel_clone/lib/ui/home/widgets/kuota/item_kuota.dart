@@ -17,32 +17,25 @@ class ItemKuota extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                  kuota.namaPaket,
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.black54
-                ),
+                kuota.namaPaket,
+                style: TextStyle(fontSize: 12, color: Colors.black54),
               ),
               const SizedBox(
                 height: 2,
               ),
               Text(
-                  kuota.kuota,
+                kuota.kuota,
                 style: TextStyle(
-                  color: Colors.red,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 16
-                ),
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16),
               ),
               const SizedBox(
                 height: 2,
               ),
               Text(
-                  kuota.kadaluarsa,
-                style: TextStyle(
-                  color: Colors.black45,
-                  fontSize: 11
-                ),
+                kuota.kadaluarsa,
+                style: TextStyle(color: Colors.black45, fontSize: 11),
               )
             ],
           ),

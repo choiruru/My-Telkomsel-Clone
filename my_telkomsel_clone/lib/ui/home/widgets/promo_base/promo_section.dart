@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:my_telkomsel_clone/data/model_home_campaign.dart';
-import 'package:my_telkomsel_clone/ui/home/home_view_model.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/common/divider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/list_button.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/list_promo.dart';
@@ -11,7 +9,8 @@ class PromoSection extends StatelessWidget {
   final List<String> buttons = List();
   final Function(int) onButtonSelected;
 
-  PromoSection({Key key, @required this.homeCampaign, @required this.onButtonSelected}){
+  PromoSection(
+      {Key key, @required this.homeCampaign, @required this.onButtonSelected}) {
     homeCampaign.campaign.forEach((element) {
       buttons.add(element.buttonText);
     });
@@ -62,7 +61,7 @@ class PromoSection extends StatelessWidget {
           ListButton(
             buttons: buttons,
             selectedButton: homeCampaign.selectedButton,
-            onButtonClick: (index){
+            onButtonClick: (index) {
               onButtonSelected.call(index);
             },
           ),

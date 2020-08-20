@@ -12,12 +12,14 @@ class ListCovid extends StatelessWidget {
     return Container(
       height: 160,
       child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
-        itemCount: models.length,
-        itemBuilder: (context, index){
-          return ItemCovid(model: models[index],);
-        }),
+          scrollDirection: Axis.horizontal,
+          padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
+          itemCount: models.length,
+          itemBuilder: (context, index) {
+            return ItemCovid(
+              model: models[index],
+            );
+          }),
     );
   }
 }

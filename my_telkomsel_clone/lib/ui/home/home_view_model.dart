@@ -2,10 +2,10 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:my_telkomsel_clone/constant/assets.dart';
+import 'package:my_telkomsel_clone/data/model_home_campaign.dart';
 import 'package:my_telkomsel_clone/data/model_home_covid.dart';
 import 'package:my_telkomsel_clone/data/model_home_kuota.dart';
 import 'package:my_telkomsel_clone/data/model_home_slider.dart';
-import 'package:my_telkomsel_clone/data/model_home_campaign.dart';
 import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
 import 'package:stacked/stacked.dart';
 

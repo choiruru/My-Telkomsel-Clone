@@ -5,7 +5,9 @@ import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
 class ItemLastTransaction extends StatelessWidget {
   final LastTransaction lastTransaction;
 
-  const ItemLastTransaction({Key key, @required this.lastTransaction}) : super(key: key);
+  const ItemLastTransaction({Key key, @required this.lastTransaction})
+      : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,25 +18,29 @@ class ItemLastTransaction extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(2, 1, 10, 1),
           child: Row(
             children: [
-              const SizedBox(width: 8,),
-              Icon(MdiIcons.history, size: 30,),
-              const SizedBox(width: 8,),
+              const SizedBox(
+                width: 8,
+              ),
+              Icon(
+                MdiIcons.history,
+                size: 30,
+              ),
+              const SizedBox(
+                width: 8,
+              ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     lastTransaction.namaPaket,
                     style: TextStyle(
-                      color: Colors.black87,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 12
-                    ),
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 12),
                   ),
                   Text(
                     lastTransaction.tanggal,
-                    style: TextStyle(
-                      fontSize: 11
-                    ),
+                    style: TextStyle(fontSize: 11),
                   )
                 ],
               ),
@@ -44,9 +50,7 @@ class ItemLastTransaction extends StatelessWidget {
               ),
               OutlineButton(
                 borderSide: BorderSide(color: Colors.black54),
-                onPressed: (){
-
-                },
+                onPressed: () {},
                 child: Text("Buy"),
               )
             ],

@@ -9,17 +9,17 @@ class CampaignSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if(viewModel.modelCampaign == null){
+    if (viewModel.modelCampaign == null) {
       return Container();
     }
     return ListView.builder(
       itemCount: viewModel.modelCampaign.homeCampaigns.length,
       physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      itemBuilder: (context, index){
+      itemBuilder: (context, index) {
         return PromoSection(
           homeCampaign: viewModel.modelCampaign.homeCampaigns[index],
-          onButtonSelected: (indexButton){
+          onButtonSelected: (indexButton) {
             viewModel.updateSelectedButton(indexButton, index);
           },
         );

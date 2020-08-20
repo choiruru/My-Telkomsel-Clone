@@ -29,35 +29,32 @@ class ItemSlider extends StatelessWidget {
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.white
-                        ),
+                            borderRadius: BorderRadius.circular(8),
+                            color: Colors.white),
                         child: Padding(
-                          padding: const EdgeInsets.fromLTRB(8.0,2,8,2),
+                          padding: const EdgeInsets.fromLTRB(8.0, 2, 8, 2),
                           child: Text(
                             data.type,
-                            style: TextStyle(
-                              fontSize: 11
-                            ),
+                            style: TextStyle(fontSize: 11),
                           ),
                         ),
                       ),
-                      const SizedBox(height: 12,),
+                      const SizedBox(
+                        height: 12,
+                      ),
                       Text(
                         data.title,
                         style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 11,
-                          fontWeight: FontWeight.bold
-                        ),
+                            color: Colors.white,
+                            fontSize: 11,
+                            fontWeight: FontWeight.bold),
                       ),
-                      const SizedBox(height: 4,),
+                      const SizedBox(
+                        height: 4,
+                      ),
                       Text(
                         data.desc,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 11
-                        ),
+                        style: TextStyle(color: Colors.white, fontSize: 11),
                       )
                     ],
                   ),

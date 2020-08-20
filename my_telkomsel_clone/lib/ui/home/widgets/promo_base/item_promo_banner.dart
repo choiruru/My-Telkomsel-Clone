@@ -6,12 +6,13 @@ class ItemPromoBanner extends StatelessWidget {
   final Promo model;
   final Function onCLick;
 
-  const ItemPromoBanner({Key key, @required this.model, @required this.onCLick}) : super(key: key);
+  const ItemPromoBanner({Key key, @required this.model, @required this.onCLick})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
+      onTap: () {
         onCLick.call();
       },
       child: Card(

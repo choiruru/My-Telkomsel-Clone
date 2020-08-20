@@ -12,10 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Telkomsel',
       theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-        primaryColor: Colors.white,
-        accentColor: Colors.redAccent
-      ),
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+          primaryColor: Colors.white,
+          accentColor: Colors.redAccent),
       debugShowCheckedModeBanner: false,
       home: MainScreen(),
       routes: Routes.routes,

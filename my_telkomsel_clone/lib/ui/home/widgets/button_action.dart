@@ -14,32 +14,36 @@ class ButtonAction extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const SizedBox(width: 14,),
+              const SizedBox(
+                width: 14,
+              ),
               Expanded(
                 child: OutlineButton(
                   borderSide: BorderSide(color: Colors.black54),
-                  onPressed: (){
-
-                  },
+                  onPressed: () {},
                   child: Text("Add Credit"),
                   textColor: Colors.black87,
                 ),
               ),
-              const SizedBox(width: 10,),
+              const SizedBox(
+                width: 10,
+              ),
               Expanded(
                 child: RaisedButton(
-                  onPressed: (){
-
-                  },
+                  onPressed: () {},
                   child: Text("Buy Package"),
                   color: Colors.red,
                   textColor: Colors.white,
                 ),
               ),
-              const SizedBox(width: 14,)
+              const SizedBox(
+                width: 14,
+              )
             ],
           ),
-          const SizedBox(height: 8,),
+          const SizedBox(
+            height: 8,
+          ),
           const Divider(
             height: 0,
             color: Colors.black12,
@@ -50,12 +54,9 @@ class ButtonAction extends StatelessWidget {
               children: [
                 Expanded(
                   child: FlatButton.icon(
-                    onPressed: (){
-
-                    },
-                    icon: Icon(MdiIcons.heartOutline),
-                    label: Text("31 POIN")
-                  ),
+                      onPressed: () {},
+                      icon: Icon(MdiIcons.heartOutline),
+                      label: Text("31 POIN")),
                 ),
                 VerticalDivider(
                   width: 0,
@@ -63,9 +64,7 @@ class ButtonAction extends StatelessWidget {
                 ),
                 Expanded(
                   child: FlatButton.icon(
-                      onPressed: (){
-
-                      },
+                      onPressed: () {},
                       icon: Image.network(
                         ImageAssets.imgLinkAja,
                         width: 24,
@@ -76,7 +75,11 @@ class ButtonAction extends StatelessWidget {
               ],
             ),
           ),
-          Divider(thickness: 14, height: 14, color: Colors.black12,)
+          Divider(
+            thickness: 14,
+            height: 14,
+            color: Colors.black12,
+          )
         ],
       ),
     );

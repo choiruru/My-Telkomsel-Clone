@@ -8,12 +8,14 @@ class ItemPromoVideoBanner extends StatelessWidget {
   final Promo model;
   final Function onCLick;
 
-  const ItemPromoVideoBanner({Key key, @required this.model, @required this.onCLick}) : super(key: key);
+  const ItemPromoVideoBanner(
+      {Key key, @required this.model, @required this.onCLick})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: (){
+      onTap: () {
         onCLick.call();
       },
       child: Card(
@@ -36,16 +38,14 @@ class ItemPromoVideoBanner extends StatelessWidget {
                 width: getWidth(context) * 0.78,
                 height: getWidth(context) * 0.6,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.bottomCenter,
-                    end: Alignment.topCenter,
-                    colors: [
+                    gradient: LinearGradient(
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                        colors: [
                       Colors.black87,
                       Colors.transparent,
                       Colors.transparent
-                    ]
-                  )
-                ),
+                    ])),
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
