@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:my_telkomsel_clone/constant/assets.dart';
+import 'package:my_telkomsel_clone/data/model_home_campaign.dart';
 import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
 import 'package:my_telkomsel_clone/ui/home/home_view_model.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/button_action.dart';
@@ -9,11 +10,11 @@ import 'package:my_telkomsel_clone/ui/home/widgets/dont_miss/dont_miss_section.d
 import 'package:my_telkomsel_clone/ui/home/widgets/header.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/kuota/list_kuota.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/profile.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/campaign.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/promo_section.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/slider/slider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/tanggap_covid/covid_section.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/transaksi/last_transaction.dart';
-import 'package:my_telkomsel_clone/ui/home/widgets/voucher/voucher_section.dart';
-import 'package:my_telkomsel_clone/widgets/stateful_wrapper.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -57,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                             case 4 : return SliderSection(viewModel: model,);
                             case 5 : return DontMissSection();
                             case 6 : return CovidSection(models: model.covids,);
-                            case 7 : return VoucherSection(viewmodel: model,);
+                            case 7 : return CampaignSection(viewModel: model,);
                             case 8 : return Container();
                             case 9 : return Container();
                             default : return Container();

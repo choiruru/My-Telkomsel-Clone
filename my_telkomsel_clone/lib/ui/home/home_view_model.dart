@@ -5,7 +5,7 @@ import 'package:my_telkomsel_clone/constant/assets.dart';
 import 'package:my_telkomsel_clone/data/model_home_covid.dart';
 import 'package:my_telkomsel_clone/data/model_home_kuota.dart';
 import 'package:my_telkomsel_clone/data/model_home_slider.dart';
-import 'package:my_telkomsel_clone/data/model_home_voucher.dart';
+import 'package:my_telkomsel_clone/data/model_home_campaign.dart';
 import 'package:my_telkomsel_clone/data/model_last_transaction.dart';
 import 'package:stacked/stacked.dart';
 
@@ -23,8 +23,8 @@ class HomeViewModel extends BaseViewModel{
   List<TanggapCovid> _covids;
   List<TanggapCovid> get covids => _covids;
 
-  ModelVoucher _modelVoucher;
-  ModelVoucher get modelVoucher => _modelVoucher;
+  ModelHomeCampaign _modelCampaign;
+  ModelHomeCampaign get modelCampaign => _modelCampaign;
 
   int indexSlider = 0;
 
@@ -61,8 +61,8 @@ class HomeViewModel extends BaseViewModel{
   }
   
   Future<void> _getVoucher(BuildContext context) async{
-    String data = await DefaultAssetBundle.of(context).loadString(JsonAssets.voucher);
-    _modelVoucher = ModelVoucher.fromJson(json.decode(data));
+    String data = await DefaultAssetBundle.of(context).loadString(JsonAssets.homeCampaign);
+    _modelCampaign = ModelHomeCampaign.fromJson(json.decode(data));
     notifyListeners();
   }
 
@@ -71,9 +71,9 @@ class HomeViewModel extends BaseViewModel{
     notifyListeners();
   }
   
-  void updateSelectedButtonVoucher(int index){
-    if(index!=modelVoucher.selectedButton){
-      modelVoucher.selectedButton = index;
+  void updateSelectedButton(int indexButton, int indexCampaign){
+    if(indexButton!=_modelCampaign.homeCampaigns[indexCampaign].selectedButton){
+      _modelCampaign.homeCampaigns[indexCampaign].selectedButton = indexButton;
       notifyListeners();
     }
   }
