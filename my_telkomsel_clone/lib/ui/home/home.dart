@@ -10,6 +10,7 @@ import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/campaign.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/slider/slider.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/tanggap_covid/covid_section.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/transaksi/last_transaction.dart';
+import 'package:my_telkomsel_clone/widgets/detail_scaffold.dart';
 import 'package:stacked/stacked.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -21,16 +22,19 @@ class HomeScreen extends StatelessWidget {
       builder: (context, model, child) {
         return SafeArea(
           child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage(
-                    ImageAssets.imgHomeBg,
-                  ),
-                  alignment: Alignment.topCenter),
-            ),
+//            decoration: BoxDecoration(
+//              image: DecorationImage(
+//                  image: NetworkImage(
+//                    ImageAssets.imgHomeBg,
+//                  ),
+//                  alignment: Alignment.topCenter),
+//            ),
             child: RefreshIndicator(
               onRefresh: () {},
-              child: CustomScrollView(slivers: <Widget>[
+              child: DetailScaffold(
+                hasPinnedAppBar: true,
+                expandedHeight:90,
+                  slivers: <Widget>[
                 SliverAppBar(
                   floating: false,
                   pinned: true,

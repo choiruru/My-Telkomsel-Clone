@@ -5,9 +5,11 @@ import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/item_promo_banner.
 import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/item_promo_banner_small.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/item_promo_video.dart';
 import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/item_promo_video_banner.dart';
+import 'package:my_telkomsel_clone/ui/home/widgets/promo_base/item_view_all.dart';
 
 class ListPromo extends StatelessWidget {
   final List<Promo> models;
+  static const int maxList = 5;
 
   const ListPromo({Key key, @required this.models}) : super(key: key);
 
@@ -18,31 +20,10 @@ class ListPromo extends StatelessWidget {
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
-          itemCount: models.length + 1,
+          itemCount: models.length > maxList ? (maxList + 1) : models.length,
           itemBuilder: (context, index) {
-            if (index == models.length) {
-              return Card(
-                child: Container(
-                  width: 120,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        MdiIcons.chevronRight,
-                        color: Colors.red,
-                        size: 50,
-                      ),
-                      Text(
-                        "View All",
-                        style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.black87,
-                            fontWeight: FontWeight.bold),
-                      )
-                    ],
-                  ),
-                ),
-              );
+            if (index == maxList) {
+              return ItemViewAll();
             } else if (models[index].type == "banner") {
               return ItemPromoBanner(
                 model: models[index],

@@ -92,15 +92,15 @@ class Promo {
   String type;
   String img;
   String title;
-  String promoType;
+  String tag;
 
-  Promo({this.type, this.img, this.title, this.promoType});
+  Promo({this.type, this.img, this.title, this.tag});
 
   Promo.fromJson(Map<String, dynamic> json) {
     type = json['type'];
     img = json['img'];
     title = json['title'];
-    promoType = json['promo_type'];
+    tag = json['tag'];
   }
 
   Map<String, dynamic> toJson() {
@@ -108,7 +108,7 @@ class Promo {
     data['type'] = this.type;
     data['img'] = this.img;
     data['title'] = this.title;
-    data['promo_type'] = this.promoType;
+    data['tag'] = this.tag;
     return data;
   }
 }

@@ -13,31 +13,37 @@
               "type": "banner",
               "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/POINLuckydraw480x270px.jpg",
               "title": "Merdeka sale!",
-              "promo_type": "POIN"
+              "tag": "POIN"
             },
             {
               "type": "banner",
               "img": "https://www.telkomsel.com/sites/default/files/box_media/right/mobile/sebarhepi-hadiah-Mobilev2_0.jpg",
               "title": "MerdekaPilih hadiah undian yang Anda inginkan",
-              "promo_type": "POIN"
+              "tag": "POIN"
             },
             {
               "type": "banner",
               "img": "https://img.hotelmurah.com/promo/banner%20tsel%20size%20mobile.jpg",
               "title": "Hotel murah data telkomsel",
-              "promo_type": "5 POIN"
+              "tag": "5 POIN"
             },
             {
               "type": "banner",
               "img": "https://www.infojek.com/wp-content/uploads/2020/06/Call-Center-Anteraja.jpg",
               "title": "Diskom Rp7500 kirim barang via aplikasi Anteraja",
-              "promo_type": "10 POIN"
+              "tag": "10 POIN"
             },
             {
               "type": "banner",
               "img": "https://cashbac.com/blog/wp-content/uploads/2019/06/Gramedia-BTS-Blog-Banner.jpg",
               "title": "Disko Rp50,000 belanja buku di Gramedia",
-              "promo_type": "400 POIN"
+              "tag": "400 POIN"
+            },
+            {
+              "type": "banner",
+              "img": "https://cashbac.com/blog/wp-content/uploads/2019/06/Gramedia-BTS-Blog-Banner.jpg",
+              "title": "Disko Rp50,000 belanja buku di Gramedia",
+              "tag": "400 POIN"
             }
           ]
         },
@@ -48,31 +54,37 @@
               "type": "banner",
               "img": "https://m.ayosemarang.com/images-semarang/post/articles/2020/08/06/61581/galaxy-note-20-dan-note-20-ultra.jpg",
               "title": "Pre-Order Samsung Galaxy Note20 Series",
-              "promo_type": "Promo"
+              "tag": "Promo"
             },
             {
               "type": "banner",
               "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/tsel_oppo%20revo_banner_480x270_210806.jpg",
               "title": "Pre-Order Oppo Reno 4",
-              "promo_type": "Promo"
+              "tag": "Promo"
             },
             {
               "type": "banner",
               "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/FA-Landing-Page-Samsung-A01-480x270.jpg",
               "title": "Bundling Samsung Galaxy A01",
-              "promo_type": "Promo"
+              "tag": "Promo"
             },
             {
               "type": "banner",
               "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/Bundling-A11-Landing-Page-480x270.jpg",
               "title": "Bundling Samsung Galaxy A11",
-              "promo_type": "Promo"
+              "tag": "Promo"
             },
             {
               "type": "banner",
               "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/dinsey%2B_MOBILE.jpg",
               "title": "Disney+ Hotstar",
-              "promo_type": "Promo"
+              "tag": "Promo"
+            },
+            {
+              "type": "banner",
+              "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/dinsey%2B_MOBILE.jpg",
+              "title": "Disney+ Hotstar",
+              "tag": "Promo"
             }
           ]
         }
@@ -91,31 +103,37 @@
               "type": "video",
               "img": "https://vmp-cms.telkomsel.com/sites/default/files/banner_xhdpi_gen_1.jpg",
               "title": "Di Rumah Bareng Gen Halilintar",
-              "promo_type": "Live Streaming"
+              "tag": "Live Streaming"
             },
             {
               "type": "video",
               "img": "https://img.antaranews.com/cache/800x533/2019/08/25/IMG_20190824_134908.jpg",
               "title": "LTFH - Prilly",
-              "promo_type": "Live Streaming"
+              "tag": "Live Streaming"
             },
             {
               "type": "video",
               "img": "https://allrelease.id/wp-content/uploads/2020/08/MAXstream-Hadirkan-Koleksi-Hiburan-Korea-Terlengkap-dari-tvN-dan-tvN-Movies.jpg",
               "title": "tvN - Hometown Flex",
-              "promo_type": "Live Streaming"
+              "tag": "Live Streaming"
             },
             {
               "type": "video",
               "img": "https://www.dreamers.id/img_artikel/45thumbnaillee.jpg",
               "title": "tvN movies - Baseball Girl",
-              "promo_type": "Live Streaming"
+              "tag": "Live Streaming"
             },
             {
               "type": "video",
               "img": "https://cdn1-production-images-kly.akamaized.net/m_qLuiGMBU22zF6iUFemf14GFCo=/673x379/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3213708/original/013324200_1597834688-Telkomsel_Silver_Stream_Fest.jpg",
               "title": "Silver Stream Fest",
-              "promo_type": "Live Streaming"
+              "tag": "Live Streaming"
+            },
+            {
+              "type": "video",
+              "img": "https://cdn1-production-images-kly.akamaized.net/m_qLuiGMBU22zF6iUFemf14GFCo=/673x379/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3213708/original/013324200_1597834688-Telkomsel_Silver_Stream_Fest.jpg",
+              "title": "Silver Stream Fest",
+              "tag": "Live Streaming"
             }
           ]
         },
@@ -126,31 +144,37 @@
               "type": "video_banner",
               "img": "https://cdn2.tstatic.net/kupang/foto/bank/images/promo-terbaru-telkomsel_0005.jpg",
               "title": "MAXstream 6 GB 15 Ribu",
-              "promo_type": "MAXstream Package"
+              "tag": "MAXstream Package"
             },
             {
               "type": "video",
               "img": "https://awsimages.detik.net.id/community/media/visual/2020/08/07/maxstream.jpeg?w=700&q=90",
               "title": "Passion Project",
-              "promo_type": "MAXstream"
+              "tag": "MAXstream"
             },
             {
               "type": "video",
               "img": "https://cdn2.tstatic.net/tribunnewswiki/foto/bank/images/garuda-di-dadaku.jpg",
               "title": "Garuda di Dadaku",
-              "promo_type": "MAXstream"
+              "tag": "MAXstream"
             },
             {
               "type": "video",
               "img": "https://i.pinimg.com/originals/67/7d/c1/677dc1c765ace3a320ff194faec9cbb9.png",
               "title": "Soekarno",
-              "promo_type": "MAXstream"
+              "tag": "MAXstream"
             },
             {
               "type": "video",
               "img": "https://www.biem.co/wp-content/uploads/2019/11/naga-bonar-reborn.jpg",
               "title": "Nagabonar",
-              "promo_type": "MAXstream"
+              "tag": "MAXstream"
+            },
+            {
+              "type": "video",
+              "img": "https://cdn1-production-images-kly.akamaized.net/m_qLuiGMBU22zF6iUFemf14GFCo=/673x379/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3213708/original/013324200_1597834688-Telkomsel_Silver_Stream_Fest.jpg",
+              "title": "Silver Stream Fest",
+              "tag": "Live Streaming"
             }
           ]
         },
@@ -161,31 +185,37 @@
               "type": "video_banner",
               "img": "https://obs.line-scdn.net/0hga5VzwcNOE4ILxEc9eBHGTJ5OyE7QytNbBlpUFhBZnpyHXtPNUF-eyR9NXsiSn8QZh1zICgqI393GXwYMkB-/w644",
               "title": "Hero Tidak Populer",
-              "promo_type": "Games"
+              "tag": "Games"
             },
             {
               "type": "video_banner",
               "img": "https://i.ytimg.com/vi/GtIH02zJqx8/hqdefault.jpg",
               "title": "Bumper Video Gaming",
-              "promo_type": "Tips"
+              "tag": "Tips"
             },
             {
               "type": "video_banner",
               "img": "https://api.duniagames.co.id/api/content/upload/file/16927717051570424953.jpg",
               "title": "Hero Tank Terbaik",
-              "promo_type": "MLBB"
+              "tag": "MLBB"
             },
             {
               "type": "video_banner",
               "img": "https://cdn.idntimes.com/content-images/community/2019/06/uk-poster-ctr-horizontal-1f9b7e9dd6ee2d010499278d65168ab7_600x400.jpg",
               "title": "Game PS",
-              "promo_type": "Games"
+              "tag": "Games"
             },
             {
               "type": "video_banner",
               "img": "https://assets-a2.kompasiana.com/items/album/2020/08/04/screenshot-2020-08-04-22-38-15-77-22e4250240c136c826b8a3b1264b092d-5f299227097f36671551d114.jpg?t=o&v=760",
               "title": "Khaleed Hero",
-              "promo_type": "Games"
+              "tag": "Games"
+            },
+            {
+              "type": "video_banner",
+              "img": "https://assets-a2.kompasiana.com/items/album/2020/08/04/screenshot-2020-08-04-22-38-15-77-22e4250240c136c826b8a3b1264b092d-5f299227097f36671551d114.jpg?t=o&v=760",
+              "title": "Khaleed Hero",
+              "tag": "Games"
             }
           ]
         },
@@ -196,31 +226,127 @@
               "type": "banner_small",
               "img": "https://www.wowkeren.com/display/images/photo/2018/06/25/213706.jpg",
               "title": "Ramadhan 2020",
-              "promo_type": "LangitMusik"
+              "tag": "LangitMusik"
             },
             {
               "type": "banner_small",
               "img": "https://cdn1-production-images-kly.akamaized.net/xMqCNiWFcJ9W-HHSS0hXCf6NrtU=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2412147/original/044505800_1542631113-Fatin__23_.jpg",
               "title": "Hits Sekarang",
-              "promo_type": "LangitMusik"
+              "tag": "LangitMusik"
             },
             {
               "type": "banner_small",
               "img": "https://img-z.okeinfo.net/library/images/2018/09/22/itxwi2ue55edsbyq333x_13682.jpg",
               "title": "Indonesia Fresh 2020",
-              "promo_type": "LangitMusik"
+              "tag": "LangitMusik"
             },
             {
               "type": "banner_small",
               "img": "https://cdn1-production-images-kly.akamaized.net/nNtjAyxqDrEUGYEO9UsoaePiCI4=/640x853/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2995365/original/036273600_1576219563-20191213-Didi-Kempot-4.jpg",
               "title": "Sobat Ambyar",
-              "promo_type": "LangitMusik"
+              "tag": "LangitMusik"
             },
             {
               "type": "banner_small",
               "img": "https://cdn0-production-images-kly.akamaized.net/i8dvJWmcqKiWTow-cJGx1vHqoxg=/0x0:1500x1999/375x500/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2329992/original/039929200_1534247161-A3_3P7A9549.jpg",
               "title": "Di Rumah Aja",
-              "promo_type": "LangitMusik"
+              "tag": "LangitMusik"
+            },
+            {
+              "type": "banner_small",
+              "img": "https://cdn0-production-images-kly.akamaized.net/i8dvJWmcqKiWTow-cJGx1vHqoxg=/0x0:1500x1999/375x500/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2329992/original/039929200_1534247161-A3_3P7A9549.jpg",
+              "title": "Di Rumah Aja",
+              "tag": "LangitMusik"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Special Offer",
+      "subtitle": "Promo & business solution for you",
+      "icon": "https://www.iconarchive.com/download/i96285/iconsmind/outline/Hand-Touch-2.ico",
+      "selected_button": 0,
+      "campaign": [
+        {
+          "button_text": "Promo",
+          "promo": [
+            {
+              "type": "banner",
+              "img": "https://digiads.co.id/wp-content/uploads/2019/07/PAKET-PROMO-MYADS-AGUSTUS-01-01-1024x536.jpg",
+              "title": "EF Kids Diskon s.d. 17.8%",
+              "tag": "Education"
+            },
+            {
+              "type": "banner",
+              "img": "https://photo.kontan.co.id/photo/2020/07/24/1524539912p.jpg",
+              "title": "Warung untung hingga 22 juta per bulan? Bisa!",
+              "tag": "eCommerce"
+            },
+            {
+              "type": "banner",
+              "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/kuotaketengan-480.jpg",
+              "title": "Spesial Promo Khusus Jabodetabek",
+              "tag": "Education"
+            },
+            {
+              "type": "banner",
+              "img": "https://akcdn.detik.net.id/visual/2015/05/20/ae18419e-85be-4fa4-9555-141af0267288_169.jpg?w=650",
+              "title": "Daftar disini sekarang",
+              "tag": "Other"
+            },
+            {
+              "type": "banner",
+              "img": "https://cdn.infobrand.id/images/img/posts/2018/02/26/telkomsel-myads-solusi-beriklan-cepat-dan-akurat-bagi-umkm.png",
+              "title": "Pilihan tepat untuk promosikan usahamu",
+              "tag": "DigiAds"
+            },
+            {
+              "type": "banner",
+              "img": "https://cdn.infobrand.id/images/img/posts/2018/02/26/telkomsel-myads-solusi-beriklan-cepat-dan-akurat-bagi-umkm.png",
+              "title": "Pilihan tepat untuk promosikan usahamu",
+              "tag": "DigiAds"
+            }
+          ]
+        },
+        {
+          "button_text": "Telkomsel myBusiness",
+          "promo": [
+            {
+              "type": "banner",
+              "img": "https://asset.kompas.com/crops/2HIVQdx_ico0Z0zoQcvDwT3pKi8=/0x0:2736x1824/750x500/data/photo/2020/03/21/5e761b17e8910.jpg",
+              "title": "CloudX Meeting",
+              "tag": "Solusi Bisnis"
+            },
+            {
+              "type": "banner",
+              "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/box_media_left_17_business_enterprisecommunications_TeamPLAN_hero_mobile_480x270.jpg",
+              "title": "Enterprise Connectivity",
+              "tag": "Solusi Bisnis"
+            },
+            {
+              "type": "banner",
+              "img": "https://i2.wp.com/carainvestasibisnis.com/wp-content/uploads/2018/09/MKIOS.png?resize=512%2C250&ssl=1",
+              "title": "Yuk, jadi agen reseller!",
+              "tag": "Reseller Agent"
+            },
+            {
+              "type": "banner",
+              "img": "https://www.telkomsel.com/sites/default/files/box_media/left/mobile/KV_99%20Usahaku_Mobile%20480x270-min.jpg",
+              "title": "99% Usahaku",
+              "tag": "Solusi Bisnis"
+            },
+            {
+              "type": "banner",
+              "img": "https://www.telkomsel.com/sites/default/files/box_media/right/mobile/480x270px%20%28Mobile%29.jpg",
+              "title": "#terusProduktif dengan CloudX",
+              "tag": "Solusi Bisnis"
+            },
+            {
+              "type": "banner",
+              "img": "https://www.telkomsel.com/sites/default/files/box_media/right/mobile/480x270px%20%28Mobile%29.jpg",
+              "title": "#terusProduktif dengan CloudX",
+              "tag": "Solusi Bisnis"
             }
           ]
         }

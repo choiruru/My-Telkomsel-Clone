@@ -40,7 +40,7 @@ class ItemPromoBanner extends StatelessWidget {
                     color: Colors.black12,
                     padding: EdgeInsets.fromLTRB(8, 2, 8, 2),
                     child: Text(
-                      model.promoType,
+                      model.tag,
                       style: TextStyle(color: Colors.black87, fontSize: 10),
                     ),
                   ),
